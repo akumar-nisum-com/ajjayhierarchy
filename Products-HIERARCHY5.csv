@@ -1,4 +1,4 @@
-ID,Brand,Dept,SubDept,Category,SubCategory,
+ID,Brand,Dept,SubDept,Category,SubCategory
 G1,Gap,,,,, 
 D1,Gap,Men,,,, 
 SD1,Gap,Men,MenShirts,,, 
@@ -45,4 +45,3 @@ SC22,Gap,Kids,SleepWear,Cotton,Knot,
 C12,Gap,Kids,SleepWear,OrganicCotton,, 
 SC23,Gap,Kids,SleepWear,OrganicCotton,Zip, 
 SC24,Gap,Kids,SleepWear,OrganicCotton,easywear, 
-,,,,,, 
