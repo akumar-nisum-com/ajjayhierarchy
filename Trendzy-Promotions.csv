@@ -1,0 +1,6 @@
+code,name,description,offer_type,discount_type,start_date,end_date,active,discount_value,exclusions,min_qty
+OO1,20% on Total Order,20% on Total Order,simple,percent,2018-02-05T06:31:47.890Z,2018-02-07T06:31:47.890Z,1,20,,2
+OO2,50% on Two items in a Order,50% on Two items in a Order,simple,percent,2018-02-05T06:31:47.890Z,2018-02-07T06:31:47.890Z,1,50,,2
+OO3,10% on Total Order,10% on Total Order,simple,percent,2018-02-05T06:31:47.890Z,2018-02-07T06:31:47.890Z,1,10,,2
+OO4,5% on Total Order,5% on Total Order,simple,percent,2018-02-05T06:31:47.890Z,2018-02-07T06:31:47.890Z,1,5,,2
+OO5,40% on Total Order,40% on Total Order,simple,percent,2018-02-05T06:31:47.890Z,2018-02-07T06:31:47.890Z,1,40,category_bags,2
