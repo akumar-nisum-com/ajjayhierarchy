@@ -35,12 +35,14 @@ MERGE (current)-[:PART_OF { code: "part_of" }]->(parent);
 
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/ajjayhierarchy/master/Trendzy-Products.csv" AS csvLine 
 MATCH (parent:SubCategory {code: csvLine.parent_code})
-MERGE (current:Product:NX_Taxonomy {productid:csvLine.productid,name:csvLine.name,sku:csvLine.sku,
+MERGE (current:Product:NX_Taxonomy {productid:toUpper(csvLine.productid),name:csvLine.name,sku:toUpper(csvLine.sku),
 price:toFloat(csvLine.price),qty:toInteger(csvLine.qty),description:csvLine.description,activity:csvLine.activity,
 gender:csvLine.gender,
 special_price:toFloat(csvLine.special_price),created_on:timestamp(),updated_on:timestamp()
 })
 MERGE (current)-[:PART_OF { code: "part_of" }]->(parent);
+
+
 
 
 
