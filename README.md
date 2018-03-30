@@ -60,8 +60,12 @@ discount_value:toFloat(csvLine.discount_value),min_qty:toInteger(csvLine.min_qty
 CREATE CONSTRAINT ON (t:Offer) ASSERT t.code IS UNIQUE;
 
 
-MATCH (o:Offer{code:'OO1'}),(p:Product{productid:'WJ05-XS-Brown'}) MERGE (o)-[:AVAILABLE]->(p) ;
-MATCH (o:Offer{code:'OO2'}),(p:Product{productid:'WJ05-XS-Brown'}) MERGE (o)-[:AVAILABLE]->(p) ;
+MATCH (o:Offer{code:'OO1'}),(p:Product{productid:'WJ05-XS-BROWN'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+MATCH (o:Offer{code:'OO2'}),(p:Product{productid:'WJ05-XS-BROWN'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
 MATCH (o:Offer{code:'OO3'}),(p:SubCategory{code:'yoga'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
 MATCH (o:Offer{code:'OO4'}),(p:Category{code:'jackets'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
 MATCH (o:Offer{code:'OO5'}),(p:Department{code:'men'}) MERGE (o)-[:AVAILABLE]->(p) ;
