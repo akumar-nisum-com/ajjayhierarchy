@@ -6,7 +6,7 @@ CREATE CONSTRAINT ON (t:Company) ASSERT t.code IS UNIQUE;
 
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/ajjayhierarchy/master/Trendzy-Brand.csv" AS csvLine 
 MATCH (parent:Company {code: csvLine.parent_code})
-MERGE (brand:Brand:NX_Taxonomy {code:csvLine.code,name:csvLine.name,description:csvLine.description,created_on:timestamp(),updated_on:timestamp()})
+MERGE (brand:Brand:NX_Taxonomy {code:csvLine.code,name:csvLine.name,description:csvLine.description,role:'root',created_on:timestamp(),updated_on:timestamp()})
 MERGE (brand)-[:PART_OF { code: "part_of" }]->(parent);
 CREATE CONSTRAINT ON (t:Brand) ASSERT t.code IS UNIQUE;
 
