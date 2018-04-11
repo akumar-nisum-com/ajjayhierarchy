@@ -1,12 +1,12 @@
-code,name,description,offer_type,discount_type,start_date,end_date,active,discount_value,exclusions,min_qty,priority,exclusive
-OO1,20% on Total Order,20% on Total Order,simple,percent,1517814108253,1517893342000,1,20,,2,1,1
-OO2,50% on Two items in a Order,50% on Two items in a Order,simple,percent,1517814108253,1517893342000,1,50,,2,2,1
-OO3,10% on Total Order,10% on Total Order,simple,percent,1517814108253,1517893342000,1,10,,2,3,1
-OO4,5% on Total Order,5% on Total Order,simple,percent,1517814108253,1517893342000,1,5,,2,4,1
-OO5,40% on Total Order,40% on Total Order,simple,percent,1517814108253,1517893342000,1,40,category_bags,2,5,0
-OO6,21% on Total Order,21% on Total Order,simple,percent,1517814108253,1517893342000,1,21,,2,1,1
-OO7,51% on Two items in a Order,51% on Two items in a Order,simple,percent,1517814108253,1517893342000,1,51,,2,2,1
-OO8,11% on Total Order,11% on Total Order,simple,percent,1517814108253,1517893342000,1,11,,2,3,1
-OO9,5% on Total Order,5% on Total Order,simple,percent,1517814108253,1517893342000,1,6,,2,4,1
-OO10,41% on Total Order,41% on Total Order,simple,percent,1517814108253,1517893342000,1,41,category_bags,2,5,0
-OO11,38% on Total Order,38% on Total Order,simple,percent,1517814108253,1517893342000,1,38,category_bags,2,5,1
+code,name,description,offer_type,discount_type,start_date,end_date,active,discount_value,exclusions,min_qty,priority,exclusive,is_combinable
+OO1,20% on Total Order,20% on Total Order,simple,percent,1517814108253,1517893342000,1,20,,2,1,1,false
+OO2,50% on Two items in a Order,50% on Two items in a Order,simple,percent,1517814108253,1517893342000,1,50,,2,2,1,true
+OO3,10% on Total Order,10% on Total Order,simple,percent,1517814108253,1517893342000,1,10,,2,3,1,false
+OO4,5% on Total Order,5% on Total Order,simple,percent,1517814108253,1517893342000,1,5,,2,4,1,false
+OO5,40% on Total Order,40% on Total Order,simple,percent,1517814108253,1517893342000,1,40,category_bags,2,5,0,false
+OO6,21% on Total Order,21% on Total Order,simple,percent,1517814108253,1517893342000,1,21,,2,1,1,false
+OO7,51% on Two items in a Order,51% on Two items in a Order,simple,percent,1517814108253,1517893342000,1,51,,2,2,1,false
+OO8,11% on Total Order,11% on Total Order,simple,percent,1517814108253,1517893342000,1,11,,2,3,1,false
+OO9,5% on Total Order,5% on Total Order,simple,percent,1517814108253,1517893342000,1,6,,2,4,1,true
+OO10,41% on Total Order,41% on Total Order,simple,percent,1517814108253,1517893342000,1,41,category_bags,2,5,0,false
+OO11,38% on Total Order,38% on Total Order,simple,percent,1517814108253,1517893342000,1,38,category_bags,2,5,1,false
