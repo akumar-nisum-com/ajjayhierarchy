@@ -55,7 +55,7 @@ CREATE CONSTRAINT ON (t:Product) ASSERT t.productid IS UNIQUE;
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/ajjayhierarchy/master/Trendzy-Promotions.csv" AS csvLine 
 MERGE (current:Offer {code:csvLine.code,name:csvLine.name,description:csvLine.description,offer_type:csvLine.offer_type,
 discount_type:csvLine.discount_type,start_date:csvLine.start_date,end_date:csvLine.end_date,active:toInteger(csvLine.active),
-discount_value:toFloat(csvLine.discount_value),min_qty:toInteger(csvLine.min_qty),priority:toInteger(csvLine.priority),exclusive:toInteger(csvLine.exclusive),created_on:timestamp(),updated_on:timestamp()});
+discount_value:toFloat(csvLine.discount_value),min_qty:toInteger(csvLine.min_qty),priority:toInteger(csvLine.priority),exclusive:toInteger(csvLine.exclusive),is_combinable:toBoolean(csvLine.is_combinable),created_on:timestamp(),updated_on:timestamp()});
 
 CREATE CONSTRAINT ON (t:Offer) ASSERT t.code IS UNIQUE;
 
