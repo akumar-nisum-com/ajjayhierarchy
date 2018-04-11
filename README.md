@@ -8,6 +8,8 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/a
 MATCH (parent:Company {code: csvLine.parent_code})
 MERGE (brand:Brand:NX_Taxonomy {code:csvLine.code,name:csvLine.name,description:csvLine.description,role:'root',created_on:timestamp(),updated_on:timestamp()})
 MERGE (brand)-[:PART_OF { code: "part_of" }]->(parent);
+
+
 CREATE CONSTRAINT ON (t:Brand) ASSERT t.code IS UNIQUE;
 
 LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/ajjayhierarchy/master/Trendzy-Department.csv" AS csvLine 
@@ -56,6 +58,7 @@ LOAD CSV WITH HEADERS FROM "https://raw.githubusercontent.com/akumar-nisum-com/a
 MERGE (current:Offer {code:csvLine.code,name:csvLine.name,description:csvLine.description,offer_type:csvLine.offer_type,
 discount_type:csvLine.discount_type,start_date:csvLine.start_date,end_date:csvLine.end_date,active:toInteger(csvLine.active),
 discount_value:toFloat(csvLine.discount_value),min_qty:toInteger(csvLine.min_qty),priority:toInteger(csvLine.priority),exclusive:toInteger(csvLine.exclusive),is_combinable:toBoolean(csvLine.is_combinable),created_on:timestamp(),updated_on:timestamp()});
+
 
 CREATE CONSTRAINT ON (t:Offer) ASSERT t.code IS UNIQUE;
 
