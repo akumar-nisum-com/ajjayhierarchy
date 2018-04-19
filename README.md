@@ -80,8 +80,9 @@ MATCH (o:Offer{code:'OO7'}),(p:Product{productid:'1884502'}) MERGE (o)-[:AVAILAB
 
 MATCH (o:Offer{code:'OO8'}),(p:SubCategory{code:'blenders'}) MERGE (o)-[:AVAILABLE]->(p) ;
 
-MATCH (o:Offer{code:'OO9'}),(p:Category{code:'kitchen'}) MERGE (o)-[:AVAILABLE]->(p) ;
+MATCH (o:Offer{code:'OO9'}),(p:Category{code:'makers'}) MERGE (o)-[:AVAILABLE]->(p) ;
 
 MATCH (o:Offer{code:'OO10'}),(p:Department{code:'furniture'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
 MATCH (o:Offer{code:'OO11'}),(p:Department{code:'appliances'}) MERGE (o)-[:AVAILABLE]->(p) ;
 
