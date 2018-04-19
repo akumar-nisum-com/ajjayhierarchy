@@ -72,3 +72,16 @@ MATCH (o:Offer{code:'OO3'}),(p:SubCategory{code:'yoga'}) MERGE (o)-[:AVAILABLE]-
 MATCH (o:Offer{code:'OO4'}),(p:Category{code:'jackets'}) MERGE (o)-[:AVAILABLE]->(p) ;
 
 MATCH (o:Offer{code:'OO5'}),(p:Department{code:'men'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+
+MATCH (o:Offer{code:'OO6'}),(p:Product{productid:'1884502'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+MATCH (o:Offer{code:'OO7'}),(p:Product{productid:'1884502'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+MATCH (o:Offer{code:'OO8'}),(p:SubCategory{code:'blenders'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+MATCH (o:Offer{code:'OO9'}),(p:Category{code:'kitchen'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
+MATCH (o:Offer{code:'OO10'}),(p:Department{code:'furniture'}) MERGE (o)-[:AVAILABLE]->(p) ;
+MATCH (o:Offer{code:'OO11'}),(p:Department{code:'appliances'}) MERGE (o)-[:AVAILABLE]->(p) ;
+
